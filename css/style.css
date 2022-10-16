@@ -1,0 +1,234 @@
+        /* CSS Reset */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        /* CSS Variables */
+        
+         :root {
+            --navbar-height: 59px;
+        }
+        /* Navigation Bar */
+        
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+        }
+        
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 95%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        /* Navigation Bar: Logo and Image */
+        
+        #logo {
+            margin: 3px 24px;
+        }
+        
+        #logo img {
+            border-radius: 22px;
+            height: 59px;
+            margin: 3px 23px;
+        }
+        
+        #logo p {
+            color: rgba(255, 130, 146, 0.863);
+            font-family: 'Rubik Maze', cursive;
+        }
+        /* Navigation Bar: List Styling */
+        
+        #navbar ul {
+            display: flex;
+            font-family: 'Baloo Bhai', cursive;
+        }
+        
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+        
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 13px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+        }
+        /* section styling */
+        
+        #home {
+            display: flex;
+            flex-direction: column;
+            padding: 4px 150px;
+            height: 302px;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #home h1 {
+            font-family: 'Rubik Maze', cursive;
+            color: white;
+            align-items: center;
+        }
+        
+        #home p {
+            font-family: 'Baloo Bhai 2';
+            color: white;
+            font-weight: bold;
+            align-items: center;
+            font-size: 1rem;
+        }
+        
+        #home::before {
+            content: "";
+            background: url('bg.jpg') no-repeat center center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 65%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+        /* utility classes */
+        
+        .h-primary {
+            font-size: 2.9rem;
+            padding: 15px;
+        }
+        
+        .btn {
+            margin: 15px;
+            padding: 4px;
+            border: 2px solid white;
+            background: rgb(104, 102, 102);
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        
+        .btn:hover {
+            background-color: rgb(253, 247, 247);
+        }
+        
+        .h-primary {
+            display: block;
+            margin: auto;
+        }
+        
+        #services {
+            display: flex;
+            margin: 35px;
+        }
+        
+        .services-container h1 {
+            text-align: center;
+        }
+        
+        #services .box {
+            border-radius: 12px;
+            background-color: rgb(235, 231, 231);
+            border: 2px solid brown;
+            margin: 4px;
+        }
+        
+        #services .box img {
+            width: 250px;
+            height: 125px;
+            display: block;
+            margin: auto;
+            padding: 23px;
+        }
+        
+        #services .h-secondary {
+            text-align: center;
+        }
+        
+        #services .center {
+            text-align: center;
+            font-size: large;
+            padding: 8px;
+        }
+        /* client section */
+        
+        #client p {
+            font-size: 45px;
+            font-weight: bolder;
+            display: block;
+            text-align: center;
+        }
+        
+        #client-container {
+            display: flex;
+            margin: 24px;
+        }
+        
+        #client-container .client-box {
+            display: block;
+            margin: auto;
+            border-radius: 12px;
+        }
+        
+        #client-container img {
+            background-color: rgba(80, 78, 78, 0.863);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 2px;
+            width: 250px;
+            height: 220px;
+            border: 2px solid rgb(240, 67, 110)
+            /* box-shadow: 4px -4px 4px green; */
+        }
+        /* contact us Container */
+        
+        #contact h1 {
+            position: relative;
+            text-align: center;
+            font-size: 45px;
+            font-weight: bolder;
+        }
+        
+        #contact .contact-box {
+            display: block;
+            margin: auto;
+            position: relative;
+            text-align: center;
+            padding: 5px 10px;
+        }
+        
+        #contact .div-box {
+            height: 250px;
+            width: 100%;
+            background-color: rgb(201, 205, 209);
+            border: 2px solid rgb(212, 211, 211);
+            background: url("contact.jpg")center;
+            z-index: -1;
+        }
+        /* footer section */
+        
+        footer .center {
+            position: relative;
+            text-align: center;
+            background-color: black;
+            color: azure;
+            padding: 2px 15px;
+        }
